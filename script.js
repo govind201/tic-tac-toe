@@ -27,7 +27,6 @@ const game = (() => {
     if (!gameEnded && gameboard[cellIndex] === "") {
       gameboard[cellIndex] = currentPlayer.marker;
       cells[cellIndex].textContent = currentPlayer.marker;
-      cells[cellIndex].classList.add(currentPlayer.marker);
 
       if (checkWin(currentPlayer.marker)) {
         endGame(`Player ${currentPlayer.name} wins!`);
@@ -85,7 +84,6 @@ const game = (() => {
     message.textContent = "";
     cells.forEach((cell) => {
       cell.textContent = "";
-      cell.classList.remove(player1.marker, player2.marker);
     });
   };
 

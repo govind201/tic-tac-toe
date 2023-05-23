@@ -52,7 +52,6 @@ const game = (() => {
   };
 
   const checkWin = (marker) => {
-
     /*
      The winningCombinations array represents all the possible winning 
     combinations in a Tic-Tac-Toe game on a 3x3 gameboard.
